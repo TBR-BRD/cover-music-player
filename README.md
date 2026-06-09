@@ -2,6 +2,20 @@
 
 Chrome-Erweiterung für ON Radio und 80s80s. Die Erweiterung zeigt Programmübersichten mit Albumcovern und öffnet per Klick einen Player-Tab mit großem Cover, Stream-Wiedergabe und Lautstärkeregler.
 
+**Cover Music Player** is a Chrome extension that displays live radio cover artwork and plays streams in a dedicated player tab.
+
+Version **1.0.0** includes:
+
+* ON Radio program overview
+* 80s80s program overview
+* Clickable cover tiles
+* Player tab with large cover artwork
+* Integrated audio stream playback
+* Volume control with saved volume setting
+* Automatic title and cover updates
+* Fallback image when no cover is available
+* Local cover caching and throttled artwork requests
+
 <br>
 <a href="https://www.buymeacoffee.com/thoralf.brandt" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
