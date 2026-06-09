@@ -47,9 +47,9 @@ Version **1.0.0** includes:
 5. Den Ordner dieses Repositorys auswählen.
 6. Das Radio-Symbol über das Puzzle-Menü anheften.
 
-![Erweiterungen](docs/media/cmp-01.jpg)
-
 ![Auswaehlen](docs/media/cmp-02.jpg)
+
+![Extension](docs/media/cmp-01.jpg)
 
 ![Anheften](docs/media/cmp-03.jpg)
 
