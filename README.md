@@ -47,6 +47,18 @@ Version **1.0.0** includes:
 5. Den Ordner dieses Repositorys auswählen.
 6. Das Radio-Symbol über das Puzzle-Menü anheften.
 
+![Erweiterungen](docs/media/cmp-01.jpg)
+
+![Auswaehlen](docs/media/cmp-02.jpg)
+
+![Anheften](docs/media/cmp-03.jpg)
+
+![Extension starten](docs/media/cmp-04.jpg)
+
+![Uebersicht](docs/media/cmp-05.jpg)
+
+![EPlayer](docs/media/cmp-06.jpg)
+
 ## Datenquellen
 
 ### ON Radio
