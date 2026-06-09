@@ -2,6 +2,12 @@
 
 Chrome-Erweiterung für ON Radio und 80s80s. Die Erweiterung zeigt Programmübersichten mit Albumcovern und öffnet per Klick einen Player-Tab mit großem Cover, Stream-Wiedergabe und Lautstärkeregler.
 
+<br>
+<a href="https://www.buymeacoffee.com/thoralf.brandt" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
+</a>
+<br>
+
 ## Funktionen
 
 - Popup mit zwei Startpunkten: **ON Radio** und **80s80s**
