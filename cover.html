@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cover Music Player</title>
+  <link rel="stylesheet" href="cover.css">
+</head>
+<body>
+  <main class="player">
+    <section class="artPanel" aria-label="Cover">
+      <img id="cover" alt="Albumcover" hidden>
+      <div id="placeholder" class="placeholder">Kein Cover gefunden</div>
+    </section>
+
+    <section class="infoPanel">
+      <p id="channelTitle" class="channel">0N Radio</p>
+      <h1 id="trackTitle">Lade Titel...</h1>
+      <h2 id="artistName"></h2>
+      <p id="albumName" class="album"></p>
+      <p id="played" class="played"></p>
+
+      <div class="streamBox">
+        <button id="playButton" type="button">Stream starten</button>
+        <audio id="audio" controls preload="none"></audio>
+        <div class="volumeBox" aria-label="Lautstärke">
+          <label for="volumeControl">
+            <span>Lautstärke</span>
+            <strong id="volumeValue">100%</strong>
+          </label>
+          <input id="volumeControl" type="range" min="0" max="100" value="100" step="1">
+        </div>
+      </div>
+
+      <p id="status" role="status"></p>
+    </section>
+  </main>
+
+  <script src="channels.js"></script>
+  <script src="common.js"></script>
+  <script src="cover.js"></script>
+</body>
+</html>

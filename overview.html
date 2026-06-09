@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cover Music Player</title>
+  <link rel="stylesheet" href="overview.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img class="logo" src="icons/icon48.png" alt="" aria-hidden="true">
+      <h1>Cover Music Player</h1>
+    </div>
+    <label class="searchWrap">
+      <span>Programm suchen</span>
+      <input id="search" type="search" placeholder="z. B. Rock, Pop, K-Pop" autocomplete="off" spellcheck="false">
+    </label>
+  </header>
+
+  <main>
+    <section id="grid" class="grid" aria-live="polite"></section>
+  </main>
+
+  <template id="cardTemplate">
+    <article class="card">
+      <button class="coverButton" type="button" title="Cover-Player öffnen">
+        <img class="cover" alt="Cover" hidden>
+        <span class="fallback">ON</span>
+        <span class="playBadge">▶</span>
+      </button>
+      <div class="cardText">
+        <h2></h2>
+        <p class="artist"></p>
+        <p class="title"></p>
+        <p class="status"></p>
+      </div>
+    </article>
+  </template>
+
+  <script src="channels.js"></script>
+  <script src="common.js"></script>
+  <script src="overview.js"></script>
+</body>
+</html>

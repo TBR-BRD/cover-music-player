@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Cover Music Player",
+  "version": "1.0.0",
+  "description": "Cover-Player für ON Radio und 80s80s mit Programmübersicht, Albumcovern und Stream-Wiedergabe.",
+  "homepage_url": "https://github.com/TBR-BRD/cover-music-player",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.0nradio.com/*",
+    "https://itunes.apple.com/*",
+    "https://*.mzstatic.com/*",
+    "https://*.radionetz.de/*",
+    "https://www.80s80s.de/*",
+    "https://streams.80s80s.de/*",
+    "http://streams.80s80s.de/*",
+    "https://images.80s80s.de/*",
+    "https://*.streamabc.net/*",
+    "http://*.streamabc.net/*"
+  ],
+  "action": {
+    "default_title": "Cover Music Player",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://www.0nradio.com https://www.80s80s.de https://itunes.apple.com; img-src 'self' https://*.mzstatic.com https://images.80s80s.de data: blob:; media-src 'self' https://*.radionetz.de https://streams.80s80s.de http://streams.80s80s.de https://*.streamabc.net http://*.streamabc.net;"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

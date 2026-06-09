@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cover Music Player</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup">
+    <header>
+      <img class="logo" src="icons/icon48.png" alt="" aria-hidden="true">
+      <h1>Cover Music Player</h1>
+    </header>
+
+    <div class="grid">
+      <label>
+        Land
+        <select id="country">
+          <option value="DE">DE</option>
+          <option value="AT">AT</option>
+          <option value="CH">CH</option>
+          <option value="US">US</option>
+          <option value="GB">GB</option>
+        </select>
+      </label>
+      <label>
+        Cover
+        <select id="coverSize">
+          <option value="600">600 px</option>
+          <option value="800">800 px</option>
+          <option value="1000">1000 px</option>
+          <option value="1200">1200 px</option>
+          <option value="1500">1500 px</option>
+        </select>
+      </label>
+      <label>
+        Update
+        <select id="refreshSeconds">
+          <option value="10">10 s</option>
+          <option value="15">15 s</option>
+          <option value="30">30 s</option>
+          <option value="60">60 s</option>
+        </select>
+      </label>
+      <label>
+        Qualität
+        <select id="quality">
+          <option value="100">100</option>
+          <option value="999">999</option>
+        </select>
+      </label>
+    </div>
+
+    <button id="openOnOverview" type="button">ON Radio</button>
+    <button id="open80sOverview" type="button">80s80s</button>
+    <button id="saveOnly" class="secondary" type="button">Einstellungen speichern</button>
+
+    <p id="status" role="status"></p>
+  </main>
+  <script src="channels.js"></script>
+  <script src="common.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
