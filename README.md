@@ -40,7 +40,7 @@ Version **1.0.0** includes:
 
 ## Installation in Chrome
 
-1. Repository herunterladen oder klonen.
+1. Release aus dem Ordner herunterladen und enpacken oder Repository herunterladen oder klonen.
 2. Chrome öffnen und `chrome://extensions` aufrufen.
 3. Entwicklermodus aktivieren.
 4. **Entpackte Erweiterung laden** anklicken.
