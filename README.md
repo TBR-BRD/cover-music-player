@@ -36,7 +36,7 @@ Version **1.0.0** includes:
 - Korrektur typischer Umlaut-/Encoding-Fehler
 - Einmalige Hilfeseite zum Anheften des Extension-Symbols
 
-![Mein Aufbau](docs/media/rpi-oberflaeche-qr.jpg)
+![Architektur](docs/media/cmp-00.jpg)
 
 ## Installation in Chrome
 
