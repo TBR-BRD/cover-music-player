@@ -16,7 +16,13 @@
     "https://www.80s80s.de/*",
     "https://streams.80s80s.de/*",
     "http://streams.80s80s.de/*",
+    "https://streams.90s90s.de/*",
+    "https://streams.deltaradio.de/*",
+    "https://streams.norawebstreams.de/*",
+    "https://streams.radiobob.de/*",
+    "https://streams.weihnachtsmusik.fm/*",
     "https://images.80s80s.de/*",
+    "https://images.weihnachtsmusik.fm/*",
     "https://*.streamabc.net/*",
     "http://*.streamabc.net/*"
   ],
@@ -37,7 +43,7 @@
     "128": "icons/icon128.png"
   },
   "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://www.0nradio.com https://www.80s80s.de https://itunes.apple.com; img-src 'self' https://*.mzstatic.com https://images.80s80s.de data: blob:; media-src 'self' https://*.radionetz.de https://streams.80s80s.de http://streams.80s80s.de https://*.streamabc.net http://*.streamabc.net;"
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://www.0nradio.com https://www.80s80s.de https://itunes.apple.com; img-src 'self' https://*.mzstatic.com https://images.80s80s.de https://images.weihnachtsmusik.fm data: blob:; media-src 'self' https://*.radionetz.de https://streams.80s80s.de http://streams.80s80s.de https://streams.90s90s.de https://streams.deltaradio.de https://streams.norawebstreams.de https://streams.radiobob.de https://streams.weihnachtsmusik.fm https://*.streamabc.net http://*.streamabc.net;"
   },
   "background": {
     "service_worker": "background.js"

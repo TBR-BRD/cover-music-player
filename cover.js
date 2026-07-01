@@ -44,6 +44,8 @@ let lastStreamUrl = "";
 const initialArtworkLookupKey = Common.artworkLookupKey(settings.initialArtist, settings.initialTitle);
 let updateTimer = null;
 let artworkRetryTimer = null;
+let programmaticPauseTimer = null;
+let ignoreNextProgrammaticPause = false;
 
 channelTitle.textContent = settings.initialChannelTitle || (channel ? channel.title : providerInfo.title || settings.channel);
 
@@ -211,6 +213,16 @@ function updateAudioSource(url) {
   const normalized = Common.normalizeUrl(url || "");
   if (!normalized || normalized === lastStreamUrl) return;
   lastStreamUrl = normalized;
+
+  if (!audio.paused) {
+    ignoreNextProgrammaticPause = true;
+    if (programmaticPauseTimer) clearTimeout(programmaticPauseTimer);
+    programmaticPauseTimer = setTimeout(() => {
+      ignoreNextProgrammaticPause = false;
+      programmaticPauseTimer = null;
+    }, 1000);
+  }
+
   audio.src = normalized;
   audio.load();
 }
@@ -271,6 +283,18 @@ audio.addEventListener("play", () => {
 });
 
 audio.addEventListener("pause", () => {
+  if (ignoreNextProgrammaticPause) {
+    ignoreNextProgrammaticPause = false;
+    if (programmaticPauseTimer) {
+      clearTimeout(programmaticPauseTimer);
+      programmaticPauseTimer = null;
+    }
+    setStatus("Stream wird aktualisiert.");
+    return;
+  }
+
+  wantsPlayback = false;
+  playButton.hidden = false;
   setStatus("Stream pausiert.");
 });
 
@@ -285,4 +309,5 @@ init();
 window.addEventListener("beforeunload", () => {
   clearInterval(updateTimer);
   if (artworkRetryTimer) clearTimeout(artworkRetryTimer);
+  if (programmaticPauseTimer) clearTimeout(programmaticPauseTimer);
 });
