@@ -1,5 +1,7 @@
 # Cover Music Player
 
+🇩🇪 Deutsch · [🇬🇧 English](README_EN.md)
+
 ![Player](docs/media/cmp-00a.jpg)
 
 Chrome-Erweiterung für ON Radio und 80s80s. Die Erweiterung zeigt Programmübersichten mit Albumcovern und öffnet per Klick einen Player-Tab mit großem Cover, Stream-Wiedergabe und Lautstärkeregler.
